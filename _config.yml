@@ -1,0 +1,14 @@
+exclude:
+  - README.md
+  - netlify.toml
+  - stackbit.yaml
+  - .ignoreme/
+defaults:
+  - scope:
+      path: pages/advanced
+      type: pages
+    values:
+      permalink: '/:basename'
+      layout: advanced_page
+baseurl: ''
+url: ''
