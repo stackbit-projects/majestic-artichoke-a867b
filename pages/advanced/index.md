@@ -12,7 +12,7 @@ sections:
         how: soundly
       - task: jump
         done: true
-        how: high
+        how: higher
       - task: write
         done: true
       - task: hydrate
