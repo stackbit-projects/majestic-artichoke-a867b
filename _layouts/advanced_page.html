@@ -2,7 +2,6 @@
 layout: standard_header_footer
 ---
 <div class="xyzzy" {% include stackbit_data_object_id.html %}  data-sb-field-path="sections">
-    <article>
   {% for section in page.sections %}
     {% assign sectionType = section.type %}
     {% if section and sectionType %}
