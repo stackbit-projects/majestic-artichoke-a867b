@@ -2,6 +2,7 @@
 layout: standard_header_footer
 ---
 <div class="xyzzy" data-sb-object-id="{{ page.path }}">
+    <article data-sb-field-id="">
   {% for section in page.sections %}
     {% assign sectionType = section.type %}
     {% if section and sectionType %}
