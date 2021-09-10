@@ -2,6 +2,8 @@
 sections:
   - type: section_pink
     say: I did it!  It's editable at left!
+  - type: section_blue
+    mention: Hello there!
   - type: section_task_list
     accomplishments:
       - task: eat
@@ -18,6 +20,4 @@ sections:
       - task: hydrate
         done: true
         how: regularly
-  - type: section_blue
-    mention: Hello there!
 ---
