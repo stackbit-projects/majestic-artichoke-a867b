@@ -1,4 +1,5 @@
 {%- capture sb_obj_id -%} data-sb-object-id="{{ page.path }}"{%- endcapture -%}
 {%- comment -%}At this moment, jekyll.env is reading backwards for production vs development, so this code will look weird{%- endcomment -%}
 {%- unless jekyll.environment == "development" -%}
+{{ sb_obj_id }}
 {%- endunless -%}
