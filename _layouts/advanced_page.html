@@ -7,7 +7,7 @@ layout: standard_header_footer
     {% assign sectionType = section.type %}
     {% if section and sectionType %}
       {% capture sectionTemplateFile %}{{ sectionType }}.html{% endcapture %}
-      <divproducts[${index}]>{% include {{ sectionTemplateFile }} section=section %}</div>
+      <div data-sb-field-path="products[${index}]>{% include {{ sectionTemplateFile }} section=section %}</div>
     {% endif %}
   {% endfor %}
   </article>
