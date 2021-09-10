@@ -2,6 +2,7 @@
 {% assign task_list_section = include.section %}
 {% if task_list_section and task_list_section.accomplishments and task_list_section.accomplishments.size > 0 %}
   <div class="task-list" data-sb-field-path=".accomplishments">
+      <div></div>
     {% for task in task_list_section.accomplishments %}
       {% capture alternatingClassName %}{% cycle 'task-odd', 'task-even' %}{% endcapture %}
       <div data-sb-field-path=".accomplishments[{{ forloop.index | minus: 1 }}]">
