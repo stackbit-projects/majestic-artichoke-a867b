@@ -1,4 +1,4 @@
-stackbitVersion: ~0.4.0
+stackbitVersion: ~0.3.0
 ssgName: jekyll
 
 pagesDir: pages # Indeed, in my MVB example, this is where index.md and about.md live.
