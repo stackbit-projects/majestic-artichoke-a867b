@@ -7,7 +7,7 @@ layout: standard_header_footer
     {% assign sectionType = section.type %}
     {% if section and sectionType %}
       {% capture sectionTemplateFile %}{{ sectionType }}.html{% endcapture %}
-      <div></div>{% include {{ sectionTemplateFile }} section=section %}
+      <divproducts[${index}]></div>{% include {{ sectionTemplateFile }} section=section %}
     {% endif %}
   {% endfor %}
   </article>
