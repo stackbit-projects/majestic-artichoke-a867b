@@ -5,9 +5,7 @@
   <div class="task-list" data-sb-field-path=".accomplishments">
     {% for task in task_list_section.accomplishments %}
       {% capture alternatingClassName %}{% cycle 'task-odd', 'task-even' %}{% endcapture %}
-      <div data-sb-field-path=".accomplishments[{{ forloop.index | minus: 1 }}]">
-        {% include item_task.html taskDetail=task alternatingClassName=alternatingClassName %}
-      </div>
+      {% include item_task.html taskDetail=task alternatingClassName=alternatingClassName %}
     {% endfor %}
   </div>
     <div><p>&nbsp;</p></div>
