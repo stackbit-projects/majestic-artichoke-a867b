@@ -9,7 +9,7 @@ layout: standard_header_footer
       {% capture sectionTemplateFile %}{{ sectionType }}.html{% endcapture %}
       <div data-sb-field-path="sections[{{ forloop.index }}]">
         {% include {{ sectionTemplateFile }} section=section %}
-    </div>
+      </div>
     {% endif %}
   {% endfor %}
   </article>
