@@ -11,7 +11,7 @@
     <div class="{{ classes }}">
       <b>{{ checkboxSymbol}}</b> <b>{{ single_task.task }}</b>
       {% unless single_task.how == blank %}
-        <i> <span  data-sb-field-path=".accomplishments"></span>{{ single_task.how }}</i>
+        <i> <span  data-sb-field-path=".accomplishments">{{ single_task.how }}</span></i>
       {% endunless %}
     </div>
   {% endunless %}
