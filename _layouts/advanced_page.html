@@ -1,7 +1,7 @@
 ---
 layout: standard_header_footer
 ---
-<div class="xyzzy">
+<div class="xyzzy">{{ site.environment }}
   {% for section in page.sections %}
     {% assign sectionType = section.type %}
     {% if section and sectionType %}
