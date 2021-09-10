@@ -1,14 +1,13 @@
 ---
 layout: standard_header_footer
 ---
-<div class="xyzzy" {% include stackbit_data_object_id.html %}  data-sb-field-path="sections">
+<div class="xyzzy" {% include stackbit_data_object_id.html %} data-sb-field-path="sections">
   {% for section in page.sections %}
     {% assign sectionType = section.type %}
     {% if section and sectionType %}
       {% capture sectionTemplateFile %}{{ sectionType }}.html{% endcapture %}
-      <div data-sb-field-path="sections[{{ forloop.index | minus: 1 }}]">
-        {% include {{ sectionTemplateFile }} section=section %}
-      </div>
+      {% capture forLoopIndexsb %}{{ forloop.index | minus: 1 }}{% endcapture %}
+      {% include {{ sectionTemplateFile }} section=section sbloopindex=forLoopIndex %}
     {% endif %}
   {% endfor %}
 </div>
