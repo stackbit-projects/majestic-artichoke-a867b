@@ -1,7 +1,7 @@
 ---
 sections:
   - type: section_pink
-    say: I did it!
+    say: "I did it!\_ I can edit it here, too."
   - type: section_task_list
     accomplishments:
       - task: eat
