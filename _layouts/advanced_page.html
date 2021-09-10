@@ -1,3 +1,4 @@
+```liquid
 ---
 layout: standard_header_footer
 ---
@@ -6,8 +7,9 @@ layout: standard_header_footer
     {% assign sectionType = section.type %}
     {% if section and sectionType %}
       {% capture sectionTemplateFile %}{{ sectionType }}.html{% endcapture %}
-      {% capture forLoopIndexsb %}{{ forloop.index | minus: 1 }}{% endcapture %}
-      {% include {{ sectionTemplateFile }} section=section sbloopindex=forLoopIndex %}
+      <section data-sb-field-path="sections[{{ forloop.index | minus: 1 }}]">
+        {% include {{ sectionTemplateFile }} section=section %}
+      </section>
     {% endif %}
   {% endfor %}
 </div>
