@@ -2,7 +2,7 @@
 layout: standard_header_footer
 ---
 <div class="xyzzy" {% include stackbit_data_object_id.html %}>
-    <article data-sb-field
+    <article data-sb-field-path="">
   {% for section in page.sections %}
     {% assign sectionType = section.type %}
     {% if section and sectionType %}
@@ -10,4 +10,5 @@ layout: standard_header_footer
       {% include {{ sectionTemplateFile }} section=section %}
     {% endif %}
   {% endfor %}
+  </article>
 </div>
