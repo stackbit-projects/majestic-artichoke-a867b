@@ -6,7 +6,7 @@ layout: standard_header_footer
     {% assign sectionType = section.type %}
     {% if section and sectionType %}
       {% capture sectionTemplateFile %}{{ sectionType }}.html{% endcapture %}
-      <section data-sb-field-path="sections[{{ forloop.index | minus: 1 }}]">
+      <section xdata-sb-field-path="sections[{{ forloop.index | minus: 1 }}]">
         {% include {{ sectionTemplateFile }} section=section %}
       </section>
     {% endif %}
