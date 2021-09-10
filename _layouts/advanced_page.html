@@ -1,7 +1,7 @@
 ---
 layout: standard_header_footer
 ---
-<div class="xyzzy">{{ jekyll.environment }}
+<div class="xyzzy">{{ site.env }}
   {% for section in page.sections %}
     {% assign sectionType = section.type %}
     {% if section and sectionType %}
