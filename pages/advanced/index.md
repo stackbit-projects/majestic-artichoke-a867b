@@ -19,5 +19,5 @@ sections:
         done: true
         how: regularly
   - type: section_blue
-    mention: Hello there!
+    mention: "Hello there!\_ Also editable at right."
 ---
