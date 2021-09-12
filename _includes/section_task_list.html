@@ -6,7 +6,7 @@
       {% capture alternatingClassName %}{% cycle 'task-odd', 'task-even' %}{% endcapture %}
       {% capture stackbitWhichTask %}{{ forloop.index | minus: 1 }}{% endcapture %}
       <div data-sb-field-path=".[{{ stackbitWhichTask }}]">
-        {% include item_task.html taskDetail=task alternatingClassName=alternatingClassName %}
+        {% include item_task.html taskDetail=task alternatingClassName=alternatingClassName whichTaskSB= %}
       </div>
     {% endfor %}
   </div>
