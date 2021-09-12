@@ -8,7 +8,7 @@
       {% assign checkboxSymbol = 'X' %}
     {% endif %}
     {% capture classes %}task {{ include.alternatingClassName }}{% endcapture %}
-    <div class="{{ classes }}" data-sb-field-path=".[{{ include.whichTaskSB }}]">
+    <div class="{{ classes }}" data-sb-field-path=".[{{ include.stackbitWhichTask }}]">
       <b>{{ checkboxSymbol}}</b> <b>{{ single_task.task }}</b>
       {% unless single_task.how == blank %}
         <i> <span>{{ single_task.how }}</span></i>
