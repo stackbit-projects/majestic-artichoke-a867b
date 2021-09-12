@@ -1,13 +1,12 @@
 {% comment %}Short-circuit if data passed to this partial as "section" isn't actually task-listing-like{% endcomment %}
 {% assign task_list_section = include.section %}
 {% if task_list_section and task_list_section.accomplishments and task_list_section.accomplishments.size > 0 %}
+    <div><p>&nbsp;</p></div>
   <div class="task-list" data-sb-field-path=".accomplishments">
     {% for task in task_list_section.accomplishments %}
       {% capture alternatingClassName %}{% cycle 'task-odd', 'task-even' %}{% endcapture %}
-      {% capture stackbitWhichTask %}{{ forloop.index | minus: 1 }}{% endcapture %}
-      <div data-sb-field-path=".[{{ stackbitWhichTask }}]">
-        {% include item_task.html taskDetail=task alternatingClassName=alternatingClassName %}
-      </div>
+      {% include item_task.html taskDetail=task alternatingClassName=alternatingClassName %}
     {% endfor %}
   </div>
+    <div><p>&nbsp;</p></div>
 {% endif %}
