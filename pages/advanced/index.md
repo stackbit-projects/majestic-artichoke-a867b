@@ -9,7 +9,7 @@ sections:
         how: well
       - task: sleep
         done: false
-        how: soundly
+        how: 'soundly, knowing you can edit text in-preview now'
       - task: jump
         done: true
         how: higher
