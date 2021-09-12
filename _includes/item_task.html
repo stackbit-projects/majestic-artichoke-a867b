@@ -9,7 +9,7 @@
     {% endif %}
     {% capture classes %}task {{ include.alternatingClassName }}{% endcapture %}
     <div class="{{ classes }}" data-sb-field-path=".[{{ include.stackbitWhichTask }}]">
-      <b>{{ checkboxSymbol}}</b> <b data-sb-field-path=".task">{{ single_task.task }}</b>
+      <b data-sb-field-path=".done">{{ checkboxSymbol}}</b> <b data-sb-field-path=".task">{{ single_task.task }}</b>
       {% unless single_task.how == blank %}
         <i> <span>{{ single_task.how }}</span></i>
       {% endunless %}
