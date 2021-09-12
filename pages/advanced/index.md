@@ -13,6 +13,9 @@ sections:
       - task: jump
         done: true
         how: higher
+      - task: lorem-ipsum
+        done: false
+        how: lorem-ipsum
       - task: write
         done: true
       - task: hydrate
