@@ -6,8 +6,8 @@ layout: standard_header_footer
     {% assign sectionType = section.type %}
     {% if section and sectionType %}
       {% capture sectionTemplateFile %}{{ sectionType }}.html{% endcapture %}
-      {% capture stackbitForLoopIndex %}{{ forloop.index | minus: 1 }}{% endcapture %}
-      <section data-sb-field-path=".[{{ stackbitForLoopIndex }}]">
+      {% capture stackbitWhichSection %}{{ forloop.index | minus: 1 }}{% endcapture %}
+      <section data-sb-field-path=".[{{ stackbitWhichSection }}]">
         {% include {{ sectionTemplateFile }} section=section %}
       </section>
     {% endif %}
